@@ -4,11 +4,13 @@
 #include <SFML/System/Time.hpp>
 #include <SFML/Graphics.hpp>
 #include <array>
+#include <map>
 #include "Command.h"
 #include "SceneNode.h"
 #include "Entity.h"
 #include "utils.h"
 #include "Character.h"
+#include "Maze.h"
 
 
 class World : private sf::NonCopyable
@@ -35,7 +37,7 @@ private:
 	enum Layer
 	{
 		Background,
-		ForeGround,
+		Foreground,
 		LayerCount
 	};
 
@@ -53,4 +55,6 @@ private:
 	sf::FloatRect worldBounds_;
 	sf::Vector2f spawnPosition_;
 	Character* playerCharacter_;
+
+	Maze* maze_;
 };

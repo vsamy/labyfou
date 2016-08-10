@@ -1,6 +1,7 @@
 #include "World.h"
 #include "math.h"
 
+
 World::World(sf::RenderTarget & outputTarget, FontHolder& fonts) :
 	target_(outputTarget),
 	sceneTexture_(),
@@ -12,7 +13,8 @@ World::World(sf::RenderTarget & outputTarget, FontHolder& fonts) :
 	commandQueue_(),
 	worldBounds_(0.f, 0.f, worldView_.getSize().x, worldView_.getSize().y),
 	spawnPosition_(worldView_.getSize().x / 2.f, worldBounds_.height - worldView_.getSize().y / 2.f),
-	playerCharacter_(nullptr)
+	playerCharacter_(nullptr),
+	maze_(nullptr)
 {
 	sceneTexture_.create(target_.getSize().x, target_.getSize().y);
 
@@ -31,14 +33,14 @@ void World::update(sf::Time dt)
 		sceneGraph_.onCommand(commandQueue_.pop(), dt);
 	adaptPlayerVelocity();
 
-	handleCollisions();
+	//handleCollisions();
 
 	sceneGraph_.update(dt, commandQueue_);
 }
 
 void World::draw()
 {
-	target_.setView(worldView_);
+	//target_.setView(worldView_);
 	target_.draw(sceneGraph_);
 }
 
@@ -55,6 +57,7 @@ bool World::hasPlayerReachEnd() const
 void World::loadTextures()
 {
 	textures_.load(TextureId::Tiles, "resources/png/spritesheet_tiles.png");
+	textures_.load(TextureId::Characters, "resources/png/spritesheet_characters.png");
 }
 
 void World::buildScene()
@@ -70,22 +73,14 @@ void World::buildScene()
 	}
 
 	//Build world here
-	/*
-	sf::Texture& jungleTexture = textures_.resource(TextureId::Jungle);
-	jungleTexture.setRepeated(true);
-	float viewHeight = worldView_.getSize().y;
-	sf::IntRect textureRect(worldBounds_);
-	textureRect.height += static_cast<int>(viewHeight);
-
-	std::unique_ptr<SpriteNode> backgroundSprite(new SpriteNode(jungleTexture, textureRect));
-	backgroundSprite->setPosition(worldBounds_.left, worldBounds_.top - viewHeight);
-	sceneLayers_[Background]->attachChild(std::move(backgroundSprite));
-	*/
+	std::unique_ptr<Maze> maze(new Maze(textures_));
+	maze_ = maze.get();
+	sceneLayers_[Background]->attachChild(std::move(maze));
 
 	std::unique_ptr<Character> player(new Character(Character::Woman, textures_));
 	playerCharacter_ = player.get();
 	playerCharacter_->setPosition(spawnPosition_);
-	sceneLayers_[ForeGround]->attachChild(std::move(player));
+	sceneLayers_[Foreground]->attachChild(std::move(player));
 }
 
 void World::handleCollisions()

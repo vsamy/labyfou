@@ -16,6 +16,34 @@ enum class TextureId
 	MainBackground,
 };
 
+enum class TileId
+{
+	//Corners
+	UpLeftCorner,
+	UpRightCorner,
+	DownLeftCorner,
+	DownRightCorner,
+
+	//Straight corridors
+	UpDownCorridor,
+	LeftRightCorridor,
+
+	//T Shape
+	UpTShape,
+	DownTShape,
+	LeftTShape,
+	RightTShape,
+
+	//Dead ends
+	UpDeadEnd,
+	DownDeadEnd,
+	LeftDeadEnd,
+	RightDeadEnd,
+
+	//CenterTile
+	Center,
+};
+
 enum class FontId
 {
 	BlackItalic,

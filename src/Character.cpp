@@ -13,6 +13,7 @@ Character::Character(Type type, const TextureHolder & textures) :
 	sprite_(textures.resource(Table[type].texture), Table[type].textureRect),
 	isMarkedForRemoval_(false)
 {
+	sprite_.setScale(0.5f, 0.5f);
 	centerOrigin(sprite_);
 }
 

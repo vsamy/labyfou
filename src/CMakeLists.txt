@@ -11,6 +11,7 @@ set(SOURCES
   Label.cpp
   main.cpp
   mathFunctions.cpp
+  Maze.cpp
   MenuState.cpp
   PauseState.cpp
   Player.cpp

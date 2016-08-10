@@ -42,6 +42,9 @@ enum class TileId
 
 	//CenterTile
 	Center,
+
+	//CloseTile
+	Close,
 };
 
 enum class FontId

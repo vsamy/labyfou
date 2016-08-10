@@ -16,14 +16,13 @@ Maze::Maze(const TextureHolder& textures) :
 	const unsigned int spaceSize = 10;
 	const unsigned int totalSize = tileSize + spaceSize;
     rows_ = 1;
-    cols_ = 15;
+    cols_ = 16;
 
 	mazeMap_.resize(rows_);
 	for(unsigned int i = 0; i < rows_; ++i)
 		mazeMap_[i].resize(cols_);
-    //mazeTexture_.setPrimitiveType(sf::Triangles);
-    mazeTexture_.setPrimitiveType(sf::Quads);
-    mazeTexture_.resize(rows_ * cols_ * 4); //It needs 2 triangles to make a quad which makes 6 vertices.
+    mazeTexture_.setPrimitiveType(sf::Triangles);
+    mazeTexture_.resize(rows_ * cols_ * 6); //It needs 2 triangles to make a quad which makes 6 vertices.
 
 	auto getIntRect = [totalSize](unsigned int row, unsigned int col)
 	{
@@ -53,6 +52,8 @@ Maze::Maze(const TextureHolder& textures) :
 
 	tileTextureById_[TileId::Center] = getIntRect(6, 7);
 
+	tileTextureById_[TileId::Close] = getIntRect(7, 6);
+
     loadMaze();
 }
 
@@ -74,6 +75,7 @@ void Maze::loadMaze()
 	mazeMap_[0][12] = TileId::UpDeadEnd;
 	mazeMap_[0][13] = TileId::LeftDeadEnd;
 	mazeMap_[0][14] = TileId::Center;
+	mazeMap_[0][15] = TileId::Close;
 
     for(unsigned int i = 0; i < rows_; ++i)
     {
@@ -81,39 +83,28 @@ void Maze::loadMaze()
         {
             sf::IntRect tileRect = tileTextureById_[mazeMap_[i][j]];
 
-			sf::Vertex* quad = &mazeTexture_[(i*cols_ + j) * 4];
+			sf::Vertex* dTri = &mazeTexture_[(i*cols_ + j) * 6];
 
-			quad[0].position = sf::Vector2f(    j * tileSize,     i * tileSize);
-			quad[1].position = sf::Vector2f((j+1) * tileSize,     i * tileSize);
-			quad[2].position = sf::Vector2f((j+1) * tileSize, (i+1) * tileSize);
-			quad[3].position = sf::Vector2f(    j * tileSize, (i+1) * tileSize);
-
-			quad[0].texCoords = sf::Vector2f(tileRect.left                 , tileRect.top                  );
-			quad[1].texCoords = sf::Vector2f(tileRect.left + tileRect.width, tileRect.top                  );
-			quad[2].texCoords = sf::Vector2f(tileRect.left + tileRect.width, tileRect.top + tileRect.height);
-			quad[3].texCoords = sf::Vector2f(tileRect.left                 , tileRect.top + tileRect.height);
-
-/*
 			//Upper traingle positions
-			dTri[0].position = sf::Vector2f(    i * tileSize,     j * tileSize);
-			dTri[1].position = sf::Vector2f(    i * tileSize, (j+1) * tileSize);
-			dTri[2].position = sf::Vector2f((i+1) * tileSize,     j * tileSize);
+			dTri[0].position = sf::Vector2f(    j * tileSize,     i * tileSize);
+			dTri[1].position = sf::Vector2f(    j * tileSize, (i+1) * tileSize);
+			dTri[2].position = sf::Vector2f((j+1) * tileSize,     i * tileSize);
 
 			//Lower triangle positions
-			dTri[3].position = sf::Vector2f(    i * tileSize, (j+1) * tileSize);
-			dTri[4].position = sf::Vector2f((i+1) * tileSize,     j * tileSize);
-			dTri[5].position = sf::Vector2f((i+1) * tileSize, (j+1) * tileSize);
+			dTri[3].position = sf::Vector2f(    j * tileSize, (i+1) * tileSize);
+			dTri[4].position = sf::Vector2f((j+1) * tileSize,     i * tileSize);
+			dTri[5].position = sf::Vector2f((j+1) * tileSize, (i+1) * tileSize);
 
 			//Upper triangle texture coordinates
 			dTri[0].texCoords = sf::Vector2f(tileRect.left                 , tileRect.top                  );
 			dTri[1].texCoords = sf::Vector2f(tileRect.left + tileRect.width, tileRect.top                  );
-			dTri[3].texCoords = sf::Vector2f(tileRect.left                 , tileRect.top + tileRect.height);
+			dTri[2].texCoords = sf::Vector2f(tileRect.left                 , tileRect.top + tileRect.height);
 			
 			//Upper triangle texture coordinates
-			dTri[4].texCoords = sf::Vector2f(tileRect.left + tileRect.width, tileRect.top                  );
-			dTri[5].texCoords = sf::Vector2f(tileRect.left                 , tileRect.top + tileRect.height);
+			dTri[3].texCoords = sf::Vector2f(tileRect.left + tileRect.width, tileRect.top                  );
+			dTri[4].texCoords = sf::Vector2f(tileRect.left                 , tileRect.top + tileRect.height);
 			dTri[5].texCoords = sf::Vector2f(tileRect.left + tileRect.width, tileRect.top + tileRect.height);
-*/
+
         }
     }
 }

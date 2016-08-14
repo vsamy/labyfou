@@ -12,7 +12,7 @@ World::World(sf::RenderTarget & outputTarget, FontHolder& fonts) :
 	sceneLayers_(),
 	commandQueue_(),
 	worldBounds_(0.f, 0.f, worldView_.getSize().x, worldView_.getSize().y),
-	spawnPosition_(worldView_.getSize().x / 2.f, worldBounds_.height - worldView_.getSize().y / 2.f),
+	spawnPosition_(32, 32),
 	playerCharacter_(nullptr),
 	maze_(nullptr)
 {

@@ -19,10 +19,10 @@ enum class TextureId
 enum class TileId
 {
 	//Corners
-	UpLeftCorner,
 	UpRightCorner,
-	DownLeftCorner,
+	UpLeftCorner,
 	DownRightCorner,
+	DownLeftCorner,
 
 	//Straight corridors
 	UpDownCorridor,
@@ -31,14 +31,14 @@ enum class TileId
 	//T Shape
 	UpTShape,
 	DownTShape,
-	LeftTShape,
 	RightTShape,
+	LeftTShape,
 
 	//Dead ends
 	UpDeadEnd,
 	DownDeadEnd,
-	LeftDeadEnd,
 	RightDeadEnd,
+	LeftDeadEnd,
 
 	//CenterTile
 	Center,

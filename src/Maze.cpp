@@ -3,6 +3,7 @@
 #include <SFML/Graphics/Vertex.hpp>
 #include <SFML/System/Vector2.hpp>
 #include <iostream>
+#include "MazeGenerator.h"
 
 const unsigned int Maze::tileSize = 64;
 
@@ -15,11 +16,11 @@ Maze::Maze(const TextureHolder& textures) :
 {
 	const unsigned int spaceSize = 10;
 	const unsigned int totalSize = tileSize + spaceSize;
-    rows_ = 1;
+    rows_ = 12;
     cols_ = 16;
 
 	mazeMap_.resize(rows_);
-	for(unsigned int i = 0; i < rows_; ++i)
+	for(std::size_t i = 0; i < rows_; ++i)
 		mazeMap_[i].resize(cols_);
     mazeTexture_.setPrimitiveType(sf::Triangles);
     mazeTexture_.resize(rows_ * cols_ * 6); //It needs 2 triangles to make a quad which makes 6 vertices.
@@ -59,23 +60,9 @@ Maze::Maze(const TextureHolder& textures) :
 
 void Maze::loadMaze()
 {
-	//Add functions for maze building algorithms
-	mazeMap_[0][0]  = TileId::DownRightCorner;
-	mazeMap_[0][1]  = TileId::DownLeftCorner;
-	mazeMap_[0][2]  = TileId::UpRightCorner;
-	mazeMap_[0][3]  = TileId::UpLeftCorner;
-	mazeMap_[0][4]  = TileId::LeftRightCorridor;
-	mazeMap_[0][5]  = TileId::UpDownCorridor;
-	mazeMap_[0][6]  = TileId::DownTShape;
-	mazeMap_[0][7]  = TileId::UpTShape;
-	mazeMap_[0][8]  = TileId::RightTShape;
-	mazeMap_[0][9]  = TileId::LeftTShape;
-	mazeMap_[0][10] = TileId::RightDeadEnd;
-	mazeMap_[0][11] = TileId::DownDeadEnd;
-	mazeMap_[0][12] = TileId::UpDeadEnd;
-	mazeMap_[0][13] = TileId::LeftDeadEnd;
-	mazeMap_[0][14] = TileId::Center;
-	mazeMap_[0][15] = TileId::Close;
+	Kruskal algo(sf::Vector2u(cols_, rows_));
+	algo.generate();
+	algo.applyMaze(mazeMap_);
 
     for(unsigned int i = 0; i < rows_; ++i)
     {

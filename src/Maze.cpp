@@ -97,12 +97,12 @@ void Maze::loadMaze()
 
 			//Upper triangle texture coordinates
 			dTri[0].texCoords = sf::Vector2f(tileRect.left                 , tileRect.top                  );
-			dTri[1].texCoords = sf::Vector2f(tileRect.left + tileRect.width, tileRect.top                  );
-			dTri[2].texCoords = sf::Vector2f(tileRect.left                 , tileRect.top + tileRect.height);
+			dTri[1].texCoords = sf::Vector2f(tileRect.left                 , tileRect.top + tileRect.height);
+			dTri[2].texCoords = sf::Vector2f(tileRect.left + tileRect.width, tileRect.top                  );
 			
 			//Upper triangle texture coordinates
-			dTri[3].texCoords = sf::Vector2f(tileRect.left + tileRect.width, tileRect.top                  );
-			dTri[4].texCoords = sf::Vector2f(tileRect.left                 , tileRect.top + tileRect.height);
+			dTri[3].texCoords = sf::Vector2f(tileRect.left                 , tileRect.top + tileRect.height);
+			dTri[4].texCoords = sf::Vector2f(tileRect.left + tileRect.width, tileRect.top                  );
 			dTri[5].texCoords = sf::Vector2f(tileRect.left + tileRect.width, tileRect.top + tileRect.height);
 
         }

@@ -16,6 +16,7 @@ bool GameState::update(sf::Time dt)
 	if (world_.hasPlayerReachEnd())
 	{
 		player_.missionStatus(Player::MissionSuccess);
+		requestStackPop();
 		requestStackPush(StatesID::Menu);
 	}
 

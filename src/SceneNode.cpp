@@ -3,8 +3,13 @@
 #include <algorithm>
 #include "utils.h"
 #include "mathFunctions.h"
+#include <SFML/Graphics/VertexArray.hpp>
+#include <SFML/Graphics/Vertex.hpp>
+#include <SFML/Graphics/PrimitiveType.hpp>
+
 
 SceneNode::SceneNode(CategoryType category) : 
+	hitBox_(1, sf::FloatRect()),
 	children_(), 
 	parent_(nullptr), 
 	defaultCategory_(category)
@@ -79,7 +84,7 @@ void SceneNode::draw(sf::RenderTarget & target, sf::RenderStates states) const
 	drawCurrent(target, states);
 	drawChildren(target, states);
 
-	//drawHitBox(target, states);
+	//drawHitBox(target, states); //Uncomment to draw hitboxes
 }
 
 void SceneNode::drawCurrent(sf::RenderTarget & /* target */, sf::RenderStates /* states */) const
@@ -92,7 +97,7 @@ void SceneNode::drawChildren(sf::RenderTarget & target, sf::RenderStates states)
 		child->draw(target, states);
 }
 
-void SceneNode::drawHitbox(sf::RenderTarget & target, sf::RenderStates /* states */) const
+void SceneNode::drawHitBox(sf::RenderTarget & target, sf::RenderStates /* states */) const
 {
 	sf::FloatRect rect = hitBox();
 

@@ -57,4 +57,5 @@ private:
 	Character* playerCharacter_;
 
 	Maze* maze_;
+	sf::Vector2u mazeSize_;
 };

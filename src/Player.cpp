@@ -92,10 +92,8 @@ Player::MissionStatus Player::missionStatus() const
 
 void Player::initializeAction()
 {
-	using namespace std::placeholders;
-
 	actionBinding_[MoveLeft].action = derivedAction<Character>(CharacterMover(-1.f, 0.f));
-	actionBinding_[MoveRight].action = derivedAction<Character>(CharacterMover(1.F, 0.f));
+	actionBinding_[MoveRight].action = derivedAction<Character>(CharacterMover(1.f, 0.f));
 	actionBinding_[MoveUp].action = derivedAction<Character>(CharacterMover(0.f, -1.f));
 	actionBinding_[MoveDown].action = derivedAction<Character>(CharacterMover(0.f, 1.f));
 }

@@ -14,7 +14,8 @@ World::World(sf::RenderTarget & outputTarget, FontHolder& fonts) :
 	worldBounds_(0.f, 0.f, worldView_.getSize().x, worldView_.getSize().y),
 	spawnPosition_(32, 32),
 	playerCharacter_(nullptr),
-	maze_(nullptr)
+	maze_(nullptr),
+	mazeSize_(16, 12)
 {
 	sceneTexture_.create(target_.getSize().x, target_.getSize().y);
 
@@ -33,9 +34,10 @@ void World::update(sf::Time dt)
 		sceneGraph_.onCommand(commandQueue_.pop(), dt);
 	adaptPlayerVelocity();
 
-	//handleCollisions();
+	handleCollisions();
 
 	sceneGraph_.update(dt, commandQueue_);
+
 }
 
 void World::draw()
@@ -73,7 +75,8 @@ void World::buildScene()
 	}
 
 	//Build world here
-	std::unique_ptr<Maze> maze(new Maze(textures_));
+	//Load mazeSize from settings
+	std::unique_ptr<Maze> maze(new Maze(textures_, mazeSize_));
 	maze_ = maze.get();
 	sceneLayers_[Background]->attachChild(std::move(maze));
 
@@ -90,11 +93,24 @@ void World::handleCollisions()
 
 	for (SceneNode::Pair pair : collisionPairs)
 	{
-		if (matchCategories(pair, CategoryType::PlayerCharacter, CategoryType::Walls))
+		if (matchCategories(pair, CategoryType::PlayerCharacter, CategoryType::Maze))
 		{
 			auto& player = static_cast<Character&>(*pair.first);
+			auto& maze   = static_cast<Maze&>(*pair.second);
 
-			//player.stepBack(); TODO
+			sf::Vector2f velocity = player.velocity();
+			std::vector<sf::Vector2f> contactNormals = maze.contactNormals();
+
+			for(sf::Vector2f& cn: contactNormals)
+			{
+				//change position with the minimum depth length
+				if(cn.x * velocity.x < 0.f)
+					velocity.x = 0.f;
+				if(cn.y * velocity.y < 0.f)
+					velocity.y = 0.f;
+			}
+
+			player.velocity(velocity);
 		}
 	}
 }

@@ -18,11 +18,14 @@ enum class TextureId
 
 enum class TileId
 {
+	//Default
+	None,
+
 	//Corners
-	UpRightCorner,
 	UpLeftCorner,
-	DownRightCorner,
+	UpRightCorner,
 	DownLeftCorner,
+	DownRightCorner,
 
 	//Straight corridors
 	UpDownCorridor,
@@ -31,14 +34,14 @@ enum class TileId
 	//T Shape
 	UpTShape,
 	DownTShape,
-	RightTShape,
 	LeftTShape,
+	RightTShape,
 
 	//Dead ends
 	UpDeadEnd,
 	DownDeadEnd,
-	RightDeadEnd,
 	LeftDeadEnd,
+	RightDeadEnd,
 
 	//CenterTile
 	Center,
@@ -85,8 +88,7 @@ enum class CategoryType : unsigned int
 	None = 0,
 	SceneLayer = 1 << 0,
 	PlayerCharacter = 1 << 1,
-	Walls = 1 << 2,
-
+	Maze = 1 << 2,
 };
 typedef std::underlying_type<CategoryType>::type enum_type;
 inline CategoryType operator|(CategoryType lhs, CategoryType rhs)

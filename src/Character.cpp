@@ -1,6 +1,9 @@
 ﻿#include "Character.h"
 #include "DataTables.h"
-#include "math.h"
+#include "mathFunctions.h"
+#include "Maze.h"
+#include <iostream>
+
 
 namespace
 {
@@ -11,7 +14,8 @@ Character::Character(Type type, const TextureHolder & textures) :
 	Entity(),
 	type_(type),
 	sprite_(textures.resource(Table[type].texture), Table[type].textureRect),
-	isMarkedForRemoval_(false)
+	isMarkedForRemoval_(false),
+	currentCell_(0)
 {
 	sprite_.setScale(0.5f, 0.5f);
 	centerOrigin(sprite_);
@@ -20,6 +24,12 @@ Character::Character(Type type, const TextureHolder & textures) :
 void Character::updateCurrent(sf::Time dt, CommandQueue& commands)
 {
 	Entity::updateCurrent(dt, commands);
+	sf::Vector2f vel = velocity();
+	if(vel != sf::Vector2f(0.f, 0.f))
+	{
+		sf::Vector2f direction = unitVector(vel);
+		sprite_.setRotation(toDegree(angleFromXAxis(direction)));
+	}
 }
 
 void Character::drawCurrent(sf::RenderTarget & target, sf::RenderStates states) const
@@ -33,7 +43,7 @@ CategoryType Character::category() const
 }
 
 
-sf::FloatRect Character::hitBox() const
+sf::FloatRect Character::hitBox() const 
 {
 	return worldTransform().transformRect(sprite_.getGlobalBounds());
 }
@@ -51,4 +61,9 @@ void Character::remove()
 float Character::maxSpeed() const
 {
 	return Table[type_].speed;
+}
+
+unsigned int Character::currentCell() const
+{
+	return currentCell_;
 }

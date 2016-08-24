@@ -5,35 +5,35 @@
 
 MazeGenerator::MazeGenerator(sf::Vector2u mazeSize) :
     mazeSize_(mazeSize),
-    tileByWallFlag_()
+    tileIdByWallFlag_()
 {
     //Corner
-    tileByWallFlag_[TopWall | RightWall] = TileId::DownLeftCorner;
-    tileByWallFlag_[TopWall | LeftWall]  = TileId::DownRightCorner;
-    tileByWallFlag_[BotWall | RightWall] = TileId::UpLeftCorner;
-    tileByWallFlag_[BotWall | LeftWall]  = TileId::UpRightCorner;
+    tileIdByWallFlag_[TopWall | RightWall] = TileId::DownLeftCorner;
+    tileIdByWallFlag_[TopWall | LeftWall]  = TileId::DownRightCorner;
+    tileIdByWallFlag_[BotWall | RightWall] = TileId::UpLeftCorner;
+    tileIdByWallFlag_[BotWall | LeftWall]  = TileId::UpRightCorner;
 
     //Corridor
-    tileByWallFlag_[TopWall | BotWall]    = TileId::LeftRightCorridor;
-    tileByWallFlag_[LeftWall | RightWall] = TileId::UpDownCorridor;
+    tileIdByWallFlag_[TopWall | BotWall]    = TileId::LeftRightCorridor;
+    tileIdByWallFlag_[LeftWall | RightWall] = TileId::UpDownCorridor;
     
     //TShape
-    tileByWallFlag_[TopWall]   = TileId::DownTShape;
-    tileByWallFlag_[BotWall]   = TileId::UpTShape;
-    tileByWallFlag_[RightWall] = TileId::LeftTShape;
-    tileByWallFlag_[LeftWall]  = TileId::RightTShape;
+    tileIdByWallFlag_[TopWall]   = TileId::DownTShape;
+    tileIdByWallFlag_[BotWall]   = TileId::UpTShape;
+    tileIdByWallFlag_[RightWall] = TileId::LeftTShape;
+    tileIdByWallFlag_[LeftWall]  = TileId::RightTShape;
     
     //DeadEnd
-    tileByWallFlag_[TopWall | BotWall | RightWall]  = TileId::RightDeadEnd;
-    tileByWallFlag_[TopWall | BotWall | LeftWall]   = TileId::LeftDeadEnd;
-    tileByWallFlag_[TopWall | RightWall | LeftWall] = TileId::UpDeadEnd;
-    tileByWallFlag_[BotWall | RightWall | LeftWall] = TileId::DownDeadEnd;
+    tileIdByWallFlag_[TopWall | BotWall | RightWall]  = TileId::RightDeadEnd;
+    tileIdByWallFlag_[TopWall | BotWall | LeftWall]   = TileId::LeftDeadEnd;
+    tileIdByWallFlag_[TopWall | RightWall | LeftWall] = TileId::UpDeadEnd;
+    tileIdByWallFlag_[BotWall | RightWall | LeftWall] = TileId::DownDeadEnd;
     
     //Center
-    tileByWallFlag_[NoWall] = TileId::Center;
+    tileIdByWallFlag_[NoWall] = TileId::Center;
 
     //Close 
-    tileByWallFlag_[AllWall] = TileId::Close;
+    tileIdByWallFlag_[AllWall] = TileId::Close;
 }
 
 /*
@@ -127,9 +127,9 @@ void Kruskal::applyMaze(std::vector<std::vector<TileId> >& mazeMap) const
     {
         for(std::size_t j = 0; j < mazeSize_.x; ++j)
         {
-            assert(tileByWallFlag_.find(cells_[i][j].wall) != tileByWallFlag_.end());
+            assert(tileIdByWallFlag_.find(cells_[i][j].wall) != tileIdByWallFlag_.end());
             assert(cells_[i][j].wall != AllWall);
-            mazeMap[i][j] = tileByWallFlag_.at(cells_[i][j].wall);
+            mazeMap[i][j] = tileIdByWallFlag_.at(cells_[i][j].wall);
         }
     }
 }

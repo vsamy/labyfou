@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Entity.h"
+#include <vector>
 
 class Character : public Entity
 {
@@ -24,9 +25,12 @@ public:
 	virtual void remove();
 
 	float maxSpeed() const;
+	unsigned int currentCell() const;
 
 private:
 	Type type_;
 	sf::Sprite sprite_;
 	bool isMarkedForRemoval_;
+
+	unsigned int currentCell_;
 };

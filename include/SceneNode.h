@@ -31,7 +31,7 @@ public:
 	void onCommand(const Command& command, sf::Time dt);
 	virtual CategoryType category() const;
 
-	void checkNodeCollision(SceneNode& node, std::set<Pair>& collisionPairs);
+	virtual void checkNodeCollision(SceneNode& node, std::set<Pair>& collisionPairs);
 	void checkSceneCollision(SceneNode& sceneGraph, std::set<Pair>& collisionPairs);
 	void removeWrecks();
 	virtual sf::FloatRect hitBox() const;
@@ -41,14 +41,17 @@ public:
 private:
 	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const final;
 	virtual void drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const;
+	virtual void drawHitBox(sf::RenderTarget& target, sf::RenderStates states) const;
 	void drawChildren(sf::RenderTarget& target, sf::RenderStates states) const;
-	void drawHitbox(sf::RenderTarget& target, sf::RenderStates states) const;
 
 	virtual void updateCurrent(sf::Time dt, CommandQueue& commands);
 	void updateChildren(sf::Time dt, CommandQueue& commands);
 
-private:
+protected:
+	std::vector<sf::FloatRect> hitBox_;
 	std::vector<uPtr> children_;
+	
+private:
 	SceneNode* parent_;
 	CategoryType defaultCategory_;
 };

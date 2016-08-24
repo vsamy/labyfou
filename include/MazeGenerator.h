@@ -38,7 +38,7 @@ protected:
 
 protected:
     sf::Vector2u mazeSize_;
-    std::map<int, TileId> tileByWallFlag_;
+    std::map<int, TileId> tileIdByWallFlag_;
 };
 
 

@@ -23,8 +23,8 @@ set(SOURCES
   TextNode.cpp
   World.cpp)
 
-add_executable(labyfou ${HEADERS} ${SOURCES})
-target_include_directories(labyfou PUBLIC ${CMAKE_SOURCE_DIR}/include)
+include_directories(../include)
+add_executable(labyfou ${SOURCES})
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 find_package(SFML 2 REQUIRED system window graphics network audio)
@@ -34,3 +34,9 @@ if(SFML_FOUND)
 endif()
 
 install(TARGETS labyfou DESTINATION ${CMAKE_SOURCE_DIR})
+set(INSTALL_PATH include/${PROJECT_NAME})
+install(FILES ${HEADERS} DESTINATION ${INSTALL_PATH})
+install(TARGETS ${PROJECT_NAME}
+  RUNTIME DESTINATION bin
+  LIBRARY DESTINATION lib
+  ARCHIVE DESTINATION lib)

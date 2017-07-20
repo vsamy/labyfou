@@ -1,0 +1,2205 @@
+{
+  "variant": {
+    "label": "Release",
+    "keywordSettings": {
+      "buildType": "release"
+    },
+    "description": "Enable optimizations, omit debug info"
+  },
+  "activeEnvironments": [],
+  "codeModel": {
+    "configurations": [
+      {
+        "name": "Debug",
+        "projects": [
+          {
+            "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build",
+            "name": "SFML",
+            "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2",
+            "targets": [
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-audio-d-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-audio-d.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-audio.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Audio",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1  ",
+                    "defines": [
+                      "FLAC__NO_DLL",
+                      "OV_EXCLUDE_STATIC_CALLBACKS",
+                      "SFML_AUDIO_EXPORTS",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/AL"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "ALCheck.cpp",
+                      "AlResource.cpp",
+                      "AudioDevice.cpp",
+                      "Listener.cpp",
+                      "Music.cpp",
+                      "Sound.cpp",
+                      "SoundBuffer.cpp",
+                      "SoundBufferRecorder.cpp",
+                      "InputSoundFile.cpp",
+                      "OutputSoundFile.cpp",
+                      "SoundRecorder.cpp",
+                      "SoundSource.cpp",
+                      "SoundStream.cpp",
+                      "SoundFileFactory.cpp",
+                      "SoundFileReaderFlac.cpp",
+                      "SoundFileReaderOgg.cpp",
+                      "SoundFileReaderWav.cpp",
+                      "SoundFileWriterFlac.cpp",
+                      "SoundFileWriterOgg.cpp",
+                      "SoundFileWriterWav.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "ALCheck.hpp",
+                      "../../../include/SFML/Audio/AlResource.hpp",
+                      "AudioDevice.hpp",
+                      "../../../include/SFML/Audio/Export.hpp",
+                      "../../../include/SFML/Audio/Listener.hpp",
+                      "../../../include/SFML/Audio/Music.hpp",
+                      "../../../include/SFML/Audio/Sound.hpp",
+                      "../../../include/SFML/Audio/SoundBuffer.hpp",
+                      "../../../include/SFML/Audio/SoundBufferRecorder.hpp",
+                      "../../../include/SFML/Audio/InputSoundFile.hpp",
+                      "../../../include/SFML/Audio/OutputSoundFile.hpp",
+                      "../../../include/SFML/Audio/SoundRecorder.hpp",
+                      "../../../include/SFML/Audio/SoundSource.hpp",
+                      "../../../include/SFML/Audio/SoundStream.hpp",
+                      "../../../include/SFML/Audio/SoundFileFactory.hpp",
+                      "../../../include/SFML/Audio/SoundFileFactory.inl",
+                      "../../../include/SFML/Audio/SoundFileReader.hpp",
+                      "SoundFileReaderFlac.hpp",
+                      "SoundFileReaderOgg.hpp",
+                      "SoundFileReaderWav.hpp",
+                      "../../../include/SFML/Audio/SoundFileWriter.hpp",
+                      "SoundFileWriterFlac.hpp",
+                      "SoundFileWriterOgg.hpp",
+                      "SoundFileWriterWav.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-audio-d-2.dll",
+                "linkFlags": "/machine:x64 /debug /INCREMENTAL",
+                "linkLibraries": "..\\..\\..\\lib\\Debug\\sfml-system-d.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\openal32.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\vorbisenc.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\vorbisfile.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\vorbis.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\ogg.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\flac.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-audio",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Audio",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "ALL_BUILD",
+                "name": "ALL_BUILD",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2",
+                "type": "UTILITY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-network-d-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-network-d.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-network.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Network",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1  ",
+                    "defines": [
+                      "SFML_NETWORK_EXPORTS",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Ftp.cpp",
+                      "Http.cpp",
+                      "IpAddress.cpp",
+                      "Packet.cpp",
+                      "Socket.cpp",
+                      "SocketSelector.cpp",
+                      "TcpListener.cpp",
+                      "TcpSocket.cpp",
+                      "UdpSocket.cpp",
+                      "Win32/SocketImpl.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/Network/Export.hpp",
+                      "../../../include/SFML/Network/Ftp.hpp",
+                      "../../../include/SFML/Network/Http.hpp",
+                      "../../../include/SFML/Network/IpAddress.hpp",
+                      "../../../include/SFML/Network/Packet.hpp",
+                      "../../../include/SFML/Network/Socket.hpp",
+                      "SocketImpl.hpp",
+                      "../../../include/SFML/Network/SocketHandle.hpp",
+                      "../../../include/SFML/Network/SocketSelector.hpp",
+                      "../../../include/SFML/Network/TcpListener.hpp",
+                      "../../../include/SFML/Network/TcpSocket.hpp",
+                      "../../../include/SFML/Network/UdpSocket.hpp",
+                      "Win32/SocketImpl.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-network-d-2.dll",
+                "linkFlags": "/machine:x64 /debug /INCREMENTAL",
+                "linkLibraries": "..\\..\\..\\lib\\Debug\\sfml-system-d.lib ws2_32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-network",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Network",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-graphics-d-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-graphics-d.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-graphics.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Graphics",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1  ",
+                    "defines": [
+                      "SFML_GRAPHICS_EXPORTS",
+                      "STBI_FAILURE_USERMSG",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/stb_image"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/jpeg"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/freetype2"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "BlendMode.cpp",
+                      "Color.cpp",
+                      "Font.cpp",
+                      "Glsl.cpp",
+                      "GLCheck.cpp",
+                      "GLExtensions.cpp",
+                      "Image.cpp",
+                      "ImageLoader.cpp",
+                      "RenderStates.cpp",
+                      "RenderTexture.cpp",
+                      "RenderTarget.cpp",
+                      "RenderWindow.cpp",
+                      "Shader.cpp",
+                      "Texture.cpp",
+                      "TextureSaver.cpp",
+                      "Transform.cpp",
+                      "Transformable.cpp",
+                      "View.cpp",
+                      "Vertex.cpp",
+                      "GLLoader.cpp",
+                      "Shape.cpp",
+                      "CircleShape.cpp",
+                      "RectangleShape.cpp",
+                      "ConvexShape.cpp",
+                      "Sprite.cpp",
+                      "Text.cpp",
+                      "VertexArray.cpp",
+                      "RenderTextureImpl.cpp",
+                      "RenderTextureImplFBO.cpp",
+                      "RenderTextureImplDefault.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/Graphics/BlendMode.hpp",
+                      "../../../include/SFML/Graphics/Color.hpp",
+                      "../../../include/SFML/Graphics/Export.hpp",
+                      "../../../include/SFML/Graphics/Font.hpp",
+                      "../../../include/SFML/Graphics/Glsl.hpp",
+                      "../../../include/SFML/Graphics/Glsl.inl",
+                      "../../../include/SFML/Graphics/Glyph.hpp",
+                      "GLCheck.hpp",
+                      "GLExtensions.hpp",
+                      "../../../include/SFML/Graphics/Image.hpp",
+                      "ImageLoader.hpp",
+                      "../../../include/SFML/Graphics/PrimitiveType.hpp",
+                      "../../../include/SFML/Graphics/Rect.hpp",
+                      "../../../include/SFML/Graphics/Rect.inl",
+                      "../../../include/SFML/Graphics/RenderStates.hpp",
+                      "../../../include/SFML/Graphics/RenderTexture.hpp",
+                      "../../../include/SFML/Graphics/RenderTarget.hpp",
+                      "../../../include/SFML/Graphics/RenderWindow.hpp",
+                      "../../../include/SFML/Graphics/Shader.hpp",
+                      "../../../include/SFML/Graphics/Texture.hpp",
+                      "TextureSaver.hpp",
+                      "../../../include/SFML/Graphics/Transform.hpp",
+                      "../../../include/SFML/Graphics/Transformable.hpp",
+                      "../../../include/SFML/Graphics/View.hpp",
+                      "../../../include/SFML/Graphics/Vertex.hpp",
+                      "GLLoader.hpp",
+                      "../../../include/SFML/Graphics/Drawable.hpp",
+                      "../../../include/SFML/Graphics/Shape.hpp",
+                      "../../../include/SFML/Graphics/CircleShape.hpp",
+                      "../../../include/SFML/Graphics/RectangleShape.hpp",
+                      "../../../include/SFML/Graphics/ConvexShape.hpp",
+                      "../../../include/SFML/Graphics/Sprite.hpp",
+                      "../../../include/SFML/Graphics/Text.hpp",
+                      "../../../include/SFML/Graphics/VertexArray.hpp",
+                      "RenderTextureImpl.hpp",
+                      "RenderTextureImplFBO.hpp",
+                      "RenderTextureImplDefault.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-graphics-d-2.dll",
+                "linkFlags": "/machine:x64 /debug /INCREMENTAL",
+                "linkLibraries": "..\\..\\..\\lib\\Debug\\sfml-window-d.lib ..\\..\\..\\lib\\Debug\\sfml-system-d.lib opengl32.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\freetype.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\jpeg.lib winmm.lib gdi32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-graphics",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Graphics",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "_build/CMakeFiles/83c1458ccb2f6952b75631cec17a81fd/generate.stamp.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ZERO_CHECK",
+                "name": "ZERO_CHECK",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2",
+                "type": "UTILITY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-system-d-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-system-d.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-system.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/System",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1  ",
+                    "defines": [
+                      "SFML_SYSTEM_EXPORTS",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Clock.cpp",
+                      "Err.cpp",
+                      "Lock.cpp",
+                      "Mutex.cpp",
+                      "Sleep.cpp",
+                      "String.cpp",
+                      "Thread.cpp",
+                      "ThreadLocal.cpp",
+                      "Time.cpp",
+                      "FileInputStream.cpp",
+                      "MemoryInputStream.cpp",
+                      "Win32/ClockImpl.cpp",
+                      "Win32/MutexImpl.cpp",
+                      "Win32/SleepImpl.cpp",
+                      "Win32/ThreadImpl.cpp",
+                      "Win32/ThreadLocalImpl.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/System/Clock.hpp",
+                      "../../../include/SFML/System/Err.hpp",
+                      "../../../include/SFML/System/Export.hpp",
+                      "../../../include/SFML/System/InputStream.hpp",
+                      "../../../include/SFML/System/Lock.hpp",
+                      "../../../include/SFML/System/Mutex.hpp",
+                      "../../../include/SFML/System/NativeActivity.hpp",
+                      "../../../include/SFML/System/NonCopyable.hpp",
+                      "../../../include/SFML/System/Sleep.hpp",
+                      "../../../include/SFML/System/String.hpp",
+                      "../../../include/SFML/System/String.inl",
+                      "../../../include/SFML/System/Thread.hpp",
+                      "../../../include/SFML/System/Thread.inl",
+                      "../../../include/SFML/System/ThreadLocal.hpp",
+                      "../../../include/SFML/System/ThreadLocalPtr.hpp",
+                      "../../../include/SFML/System/ThreadLocalPtr.inl",
+                      "../../../include/SFML/System/Time.hpp",
+                      "../../../include/SFML/System/Utf.hpp",
+                      "../../../include/SFML/System/Utf.inl",
+                      "../../../include/SFML/System/Vector2.hpp",
+                      "../../../include/SFML/System/Vector2.inl",
+                      "../../../include/SFML/System/Vector3.hpp",
+                      "../../../include/SFML/System/Vector3.inl",
+                      "../../../include/SFML/System/FileInputStream.hpp",
+                      "../../../include/SFML/System/MemoryInputStream.hpp",
+                      "Win32/ClockImpl.hpp",
+                      "Win32/MutexImpl.hpp",
+                      "Win32/SleepImpl.hpp",
+                      "Win32/ThreadImpl.hpp",
+                      "Win32/ThreadLocalImpl.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-system-d-2.dll",
+                "linkFlags": "/machine:x64 /debug /INCREMENTAL",
+                "linkLibraries": "winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-system",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/System",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-main-d.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-main-d.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-main-d.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Main",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1  ",
+                    "defines": [
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "MainWin32.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-main-d.lib",
+                "linkFlags": "/machine:x64",
+                "linkerLanguage": "CXX",
+                "name": "sfml-main",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Main",
+                "type": "STATIC_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-window-d-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-window-d.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Debug/sfml-window.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Window",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/Window/Context.hpp",
+                      "../../../include/SFML/Window/Export.hpp",
+                      "GlContext.hpp",
+                      "../../../include/SFML/Window/GlResource.hpp",
+                      "../../../include/SFML/Window/ContextSettings.hpp",
+                      "../../../include/SFML/Window/Event.hpp",
+                      "InputImpl.hpp",
+                      "../../../include/SFML/Window/Joystick.hpp",
+                      "JoystickImpl.hpp",
+                      "JoystickManager.hpp",
+                      "../../../include/SFML/Window/Keyboard.hpp",
+                      "../../../include/SFML/Window/Mouse.hpp",
+                      "../../../include/SFML/Window/Touch.hpp",
+                      "../../../include/SFML/Window/Sensor.hpp",
+                      "SensorImpl.hpp",
+                      "SensorManager.hpp",
+                      "../../../include/SFML/Window/VideoMode.hpp",
+                      "VideoModeImpl.hpp",
+                      "../../../include/SFML/Window/Window.hpp",
+                      "../../../include/SFML/Window/WindowHandle.hpp",
+                      "WindowImpl.hpp",
+                      "../../../include/SFML/Window/WindowStyle.hpp",
+                      "Win32/WglContext.hpp",
+                      "Win32/WglExtensions.hpp",
+                      "Win32/InputImpl.hpp",
+                      "Win32/JoystickImpl.hpp",
+                      "Win32/SensorImpl.hpp",
+                      "Win32/WindowImplWin32.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  },
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1  ",
+                    "defines": [
+                      "SFML_WINDOW_EXPORTS",
+                      "UNICODE",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS",
+                      "_UNICODE"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Context.cpp",
+                      "GlContext.cpp",
+                      "GlResource.cpp",
+                      "Joystick.cpp",
+                      "JoystickManager.cpp",
+                      "Keyboard.cpp",
+                      "Mouse.cpp",
+                      "Touch.cpp",
+                      "Sensor.cpp",
+                      "SensorManager.cpp",
+                      "VideoMode.cpp",
+                      "Window.cpp",
+                      "WindowImpl.cpp",
+                      "Win32/WglContext.cpp",
+                      "Win32/WglExtensions.cpp",
+                      "Win32/InputImpl.cpp",
+                      "Win32/JoystickImpl.cpp",
+                      "Win32/SensorImpl.cpp",
+                      "Win32/VideoModeImpl.cpp",
+                      "Win32/WindowImplWin32.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-window-d-2.dll",
+                "linkFlags": "/machine:x64 /debug /INCREMENTAL",
+                "linkLibraries": "..\\..\\..\\lib\\Debug\\sfml-system-d.lib winmm.lib gdi32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-window",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Window",
+                "type": "SHARED_LIBRARY"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Release",
+        "projects": [
+          {
+            "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build",
+            "name": "SFML",
+            "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2",
+            "targets": [
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-audio-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-audio.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-audio.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Audio",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG  ",
+                    "defines": [
+                      "FLAC__NO_DLL",
+                      "OV_EXCLUDE_STATIC_CALLBACKS",
+                      "SFML_AUDIO_EXPORTS",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/AL"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "ALCheck.cpp",
+                      "AlResource.cpp",
+                      "AudioDevice.cpp",
+                      "Listener.cpp",
+                      "Music.cpp",
+                      "Sound.cpp",
+                      "SoundBuffer.cpp",
+                      "SoundBufferRecorder.cpp",
+                      "InputSoundFile.cpp",
+                      "OutputSoundFile.cpp",
+                      "SoundRecorder.cpp",
+                      "SoundSource.cpp",
+                      "SoundStream.cpp",
+                      "SoundFileFactory.cpp",
+                      "SoundFileReaderFlac.cpp",
+                      "SoundFileReaderOgg.cpp",
+                      "SoundFileReaderWav.cpp",
+                      "SoundFileWriterFlac.cpp",
+                      "SoundFileWriterOgg.cpp",
+                      "SoundFileWriterWav.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "ALCheck.hpp",
+                      "../../../include/SFML/Audio/AlResource.hpp",
+                      "AudioDevice.hpp",
+                      "../../../include/SFML/Audio/Export.hpp",
+                      "../../../include/SFML/Audio/Listener.hpp",
+                      "../../../include/SFML/Audio/Music.hpp",
+                      "../../../include/SFML/Audio/Sound.hpp",
+                      "../../../include/SFML/Audio/SoundBuffer.hpp",
+                      "../../../include/SFML/Audio/SoundBufferRecorder.hpp",
+                      "../../../include/SFML/Audio/InputSoundFile.hpp",
+                      "../../../include/SFML/Audio/OutputSoundFile.hpp",
+                      "../../../include/SFML/Audio/SoundRecorder.hpp",
+                      "../../../include/SFML/Audio/SoundSource.hpp",
+                      "../../../include/SFML/Audio/SoundStream.hpp",
+                      "../../../include/SFML/Audio/SoundFileFactory.hpp",
+                      "../../../include/SFML/Audio/SoundFileFactory.inl",
+                      "../../../include/SFML/Audio/SoundFileReader.hpp",
+                      "SoundFileReaderFlac.hpp",
+                      "SoundFileReaderOgg.hpp",
+                      "SoundFileReaderWav.hpp",
+                      "../../../include/SFML/Audio/SoundFileWriter.hpp",
+                      "SoundFileWriterFlac.hpp",
+                      "SoundFileWriterOgg.hpp",
+                      "SoundFileWriterWav.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-audio-2.dll",
+                "linkFlags": "/machine:x64 /INCREMENTAL:NO",
+                "linkLibraries": "..\\..\\..\\lib\\Release\\sfml-system.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\openal32.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\vorbisenc.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\vorbisfile.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\vorbis.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\ogg.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\flac.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-audio",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Audio",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "ALL_BUILD",
+                "name": "ALL_BUILD",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2",
+                "type": "UTILITY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-network-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-network.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-network.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Network",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG  ",
+                    "defines": [
+                      "SFML_NETWORK_EXPORTS",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Ftp.cpp",
+                      "Http.cpp",
+                      "IpAddress.cpp",
+                      "Packet.cpp",
+                      "Socket.cpp",
+                      "SocketSelector.cpp",
+                      "TcpListener.cpp",
+                      "TcpSocket.cpp",
+                      "UdpSocket.cpp",
+                      "Win32/SocketImpl.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/Network/Export.hpp",
+                      "../../../include/SFML/Network/Ftp.hpp",
+                      "../../../include/SFML/Network/Http.hpp",
+                      "../../../include/SFML/Network/IpAddress.hpp",
+                      "../../../include/SFML/Network/Packet.hpp",
+                      "../../../include/SFML/Network/Socket.hpp",
+                      "SocketImpl.hpp",
+                      "../../../include/SFML/Network/SocketHandle.hpp",
+                      "../../../include/SFML/Network/SocketSelector.hpp",
+                      "../../../include/SFML/Network/TcpListener.hpp",
+                      "../../../include/SFML/Network/TcpSocket.hpp",
+                      "../../../include/SFML/Network/UdpSocket.hpp",
+                      "Win32/SocketImpl.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-network-2.dll",
+                "linkFlags": "/machine:x64 /INCREMENTAL:NO",
+                "linkLibraries": "..\\..\\..\\lib\\Release\\sfml-system.lib ws2_32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-network",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Network",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-graphics-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-graphics.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-graphics.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Graphics",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG  ",
+                    "defines": [
+                      "SFML_GRAPHICS_EXPORTS",
+                      "STBI_FAILURE_USERMSG",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/stb_image"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/jpeg"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/freetype2"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "BlendMode.cpp",
+                      "Color.cpp",
+                      "Font.cpp",
+                      "Glsl.cpp",
+                      "GLCheck.cpp",
+                      "GLExtensions.cpp",
+                      "Image.cpp",
+                      "ImageLoader.cpp",
+                      "RenderStates.cpp",
+                      "RenderTexture.cpp",
+                      "RenderTarget.cpp",
+                      "RenderWindow.cpp",
+                      "Shader.cpp",
+                      "Texture.cpp",
+                      "TextureSaver.cpp",
+                      "Transform.cpp",
+                      "Transformable.cpp",
+                      "View.cpp",
+                      "Vertex.cpp",
+                      "GLLoader.cpp",
+                      "Shape.cpp",
+                      "CircleShape.cpp",
+                      "RectangleShape.cpp",
+                      "ConvexShape.cpp",
+                      "Sprite.cpp",
+                      "Text.cpp",
+                      "VertexArray.cpp",
+                      "RenderTextureImpl.cpp",
+                      "RenderTextureImplFBO.cpp",
+                      "RenderTextureImplDefault.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/Graphics/BlendMode.hpp",
+                      "../../../include/SFML/Graphics/Color.hpp",
+                      "../../../include/SFML/Graphics/Export.hpp",
+                      "../../../include/SFML/Graphics/Font.hpp",
+                      "../../../include/SFML/Graphics/Glsl.hpp",
+                      "../../../include/SFML/Graphics/Glsl.inl",
+                      "../../../include/SFML/Graphics/Glyph.hpp",
+                      "GLCheck.hpp",
+                      "GLExtensions.hpp",
+                      "../../../include/SFML/Graphics/Image.hpp",
+                      "ImageLoader.hpp",
+                      "../../../include/SFML/Graphics/PrimitiveType.hpp",
+                      "../../../include/SFML/Graphics/Rect.hpp",
+                      "../../../include/SFML/Graphics/Rect.inl",
+                      "../../../include/SFML/Graphics/RenderStates.hpp",
+                      "../../../include/SFML/Graphics/RenderTexture.hpp",
+                      "../../../include/SFML/Graphics/RenderTarget.hpp",
+                      "../../../include/SFML/Graphics/RenderWindow.hpp",
+                      "../../../include/SFML/Graphics/Shader.hpp",
+                      "../../../include/SFML/Graphics/Texture.hpp",
+                      "TextureSaver.hpp",
+                      "../../../include/SFML/Graphics/Transform.hpp",
+                      "../../../include/SFML/Graphics/Transformable.hpp",
+                      "../../../include/SFML/Graphics/View.hpp",
+                      "../../../include/SFML/Graphics/Vertex.hpp",
+                      "GLLoader.hpp",
+                      "../../../include/SFML/Graphics/Drawable.hpp",
+                      "../../../include/SFML/Graphics/Shape.hpp",
+                      "../../../include/SFML/Graphics/CircleShape.hpp",
+                      "../../../include/SFML/Graphics/RectangleShape.hpp",
+                      "../../../include/SFML/Graphics/ConvexShape.hpp",
+                      "../../../include/SFML/Graphics/Sprite.hpp",
+                      "../../../include/SFML/Graphics/Text.hpp",
+                      "../../../include/SFML/Graphics/VertexArray.hpp",
+                      "RenderTextureImpl.hpp",
+                      "RenderTextureImplFBO.hpp",
+                      "RenderTextureImplDefault.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-graphics-2.dll",
+                "linkFlags": "/machine:x64 /INCREMENTAL:NO",
+                "linkLibraries": "..\\..\\..\\lib\\Release\\sfml-window.lib ..\\..\\..\\lib\\Release\\sfml-system.lib opengl32.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\freetype.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\jpeg.lib winmm.lib gdi32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-graphics",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Graphics",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "_build/CMakeFiles/83c1458ccb2f6952b75631cec17a81fd/generate.stamp.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ZERO_CHECK",
+                "name": "ZERO_CHECK",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2",
+                "type": "UTILITY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-system-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-system.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-system.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/System",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG  ",
+                    "defines": [
+                      "SFML_SYSTEM_EXPORTS",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Clock.cpp",
+                      "Err.cpp",
+                      "Lock.cpp",
+                      "Mutex.cpp",
+                      "Sleep.cpp",
+                      "String.cpp",
+                      "Thread.cpp",
+                      "ThreadLocal.cpp",
+                      "Time.cpp",
+                      "FileInputStream.cpp",
+                      "MemoryInputStream.cpp",
+                      "Win32/ClockImpl.cpp",
+                      "Win32/MutexImpl.cpp",
+                      "Win32/SleepImpl.cpp",
+                      "Win32/ThreadImpl.cpp",
+                      "Win32/ThreadLocalImpl.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/System/Clock.hpp",
+                      "../../../include/SFML/System/Err.hpp",
+                      "../../../include/SFML/System/Export.hpp",
+                      "../../../include/SFML/System/InputStream.hpp",
+                      "../../../include/SFML/System/Lock.hpp",
+                      "../../../include/SFML/System/Mutex.hpp",
+                      "../../../include/SFML/System/NativeActivity.hpp",
+                      "../../../include/SFML/System/NonCopyable.hpp",
+                      "../../../include/SFML/System/Sleep.hpp",
+                      "../../../include/SFML/System/String.hpp",
+                      "../../../include/SFML/System/String.inl",
+                      "../../../include/SFML/System/Thread.hpp",
+                      "../../../include/SFML/System/Thread.inl",
+                      "../../../include/SFML/System/ThreadLocal.hpp",
+                      "../../../include/SFML/System/ThreadLocalPtr.hpp",
+                      "../../../include/SFML/System/ThreadLocalPtr.inl",
+                      "../../../include/SFML/System/Time.hpp",
+                      "../../../include/SFML/System/Utf.hpp",
+                      "../../../include/SFML/System/Utf.inl",
+                      "../../../include/SFML/System/Vector2.hpp",
+                      "../../../include/SFML/System/Vector2.inl",
+                      "../../../include/SFML/System/Vector3.hpp",
+                      "../../../include/SFML/System/Vector3.inl",
+                      "../../../include/SFML/System/FileInputStream.hpp",
+                      "../../../include/SFML/System/MemoryInputStream.hpp",
+                      "Win32/ClockImpl.hpp",
+                      "Win32/MutexImpl.hpp",
+                      "Win32/SleepImpl.hpp",
+                      "Win32/ThreadImpl.hpp",
+                      "Win32/ThreadLocalImpl.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-system-2.dll",
+                "linkFlags": "/machine:x64 /INCREMENTAL:NO",
+                "linkLibraries": "winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-system",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/System",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-main.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-main.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-main.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Main",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG  ",
+                    "defines": [
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "MainWin32.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-main.lib",
+                "linkFlags": "/machine:x64",
+                "linkerLanguage": "CXX",
+                "name": "sfml-main",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Main",
+                "type": "STATIC_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-window-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-window.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/Release/sfml-window.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Window",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/Window/Context.hpp",
+                      "../../../include/SFML/Window/Export.hpp",
+                      "GlContext.hpp",
+                      "../../../include/SFML/Window/GlResource.hpp",
+                      "../../../include/SFML/Window/ContextSettings.hpp",
+                      "../../../include/SFML/Window/Event.hpp",
+                      "InputImpl.hpp",
+                      "../../../include/SFML/Window/Joystick.hpp",
+                      "JoystickImpl.hpp",
+                      "JoystickManager.hpp",
+                      "../../../include/SFML/Window/Keyboard.hpp",
+                      "../../../include/SFML/Window/Mouse.hpp",
+                      "../../../include/SFML/Window/Touch.hpp",
+                      "../../../include/SFML/Window/Sensor.hpp",
+                      "SensorImpl.hpp",
+                      "SensorManager.hpp",
+                      "../../../include/SFML/Window/VideoMode.hpp",
+                      "VideoModeImpl.hpp",
+                      "../../../include/SFML/Window/Window.hpp",
+                      "../../../include/SFML/Window/WindowHandle.hpp",
+                      "WindowImpl.hpp",
+                      "../../../include/SFML/Window/WindowStyle.hpp",
+                      "Win32/WglContext.hpp",
+                      "Win32/WglExtensions.hpp",
+                      "Win32/InputImpl.hpp",
+                      "Win32/JoystickImpl.hpp",
+                      "Win32/SensorImpl.hpp",
+                      "Win32/WindowImplWin32.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  },
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG  ",
+                    "defines": [
+                      "SFML_WINDOW_EXPORTS",
+                      "UNICODE",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS",
+                      "_UNICODE"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Context.cpp",
+                      "GlContext.cpp",
+                      "GlResource.cpp",
+                      "Joystick.cpp",
+                      "JoystickManager.cpp",
+                      "Keyboard.cpp",
+                      "Mouse.cpp",
+                      "Touch.cpp",
+                      "Sensor.cpp",
+                      "SensorManager.cpp",
+                      "VideoMode.cpp",
+                      "Window.cpp",
+                      "WindowImpl.cpp",
+                      "Win32/WglContext.cpp",
+                      "Win32/WglExtensions.cpp",
+                      "Win32/InputImpl.cpp",
+                      "Win32/JoystickImpl.cpp",
+                      "Win32/SensorImpl.cpp",
+                      "Win32/VideoModeImpl.cpp",
+                      "Win32/WindowImplWin32.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-window-2.dll",
+                "linkFlags": "/machine:x64 /INCREMENTAL:NO",
+                "linkLibraries": "..\\..\\..\\lib\\Release\\sfml-system.lib winmm.lib gdi32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-window",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Window",
+                "type": "SHARED_LIBRARY"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MinSizeRel",
+        "projects": [
+          {
+            "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build",
+            "name": "SFML",
+            "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2",
+            "targets": [
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-audio-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-audio.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-audio.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Audio",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG  ",
+                    "defines": [
+                      "FLAC__NO_DLL",
+                      "OV_EXCLUDE_STATIC_CALLBACKS",
+                      "SFML_AUDIO_EXPORTS",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/AL"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "ALCheck.cpp",
+                      "AlResource.cpp",
+                      "AudioDevice.cpp",
+                      "Listener.cpp",
+                      "Music.cpp",
+                      "Sound.cpp",
+                      "SoundBuffer.cpp",
+                      "SoundBufferRecorder.cpp",
+                      "InputSoundFile.cpp",
+                      "OutputSoundFile.cpp",
+                      "SoundRecorder.cpp",
+                      "SoundSource.cpp",
+                      "SoundStream.cpp",
+                      "SoundFileFactory.cpp",
+                      "SoundFileReaderFlac.cpp",
+                      "SoundFileReaderOgg.cpp",
+                      "SoundFileReaderWav.cpp",
+                      "SoundFileWriterFlac.cpp",
+                      "SoundFileWriterOgg.cpp",
+                      "SoundFileWriterWav.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "ALCheck.hpp",
+                      "../../../include/SFML/Audio/AlResource.hpp",
+                      "AudioDevice.hpp",
+                      "../../../include/SFML/Audio/Export.hpp",
+                      "../../../include/SFML/Audio/Listener.hpp",
+                      "../../../include/SFML/Audio/Music.hpp",
+                      "../../../include/SFML/Audio/Sound.hpp",
+                      "../../../include/SFML/Audio/SoundBuffer.hpp",
+                      "../../../include/SFML/Audio/SoundBufferRecorder.hpp",
+                      "../../../include/SFML/Audio/InputSoundFile.hpp",
+                      "../../../include/SFML/Audio/OutputSoundFile.hpp",
+                      "../../../include/SFML/Audio/SoundRecorder.hpp",
+                      "../../../include/SFML/Audio/SoundSource.hpp",
+                      "../../../include/SFML/Audio/SoundStream.hpp",
+                      "../../../include/SFML/Audio/SoundFileFactory.hpp",
+                      "../../../include/SFML/Audio/SoundFileFactory.inl",
+                      "../../../include/SFML/Audio/SoundFileReader.hpp",
+                      "SoundFileReaderFlac.hpp",
+                      "SoundFileReaderOgg.hpp",
+                      "SoundFileReaderWav.hpp",
+                      "../../../include/SFML/Audio/SoundFileWriter.hpp",
+                      "SoundFileWriterFlac.hpp",
+                      "SoundFileWriterOgg.hpp",
+                      "SoundFileWriterWav.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-audio-2.dll",
+                "linkFlags": "/machine:x64 /INCREMENTAL:NO",
+                "linkLibraries": "..\\..\\..\\lib\\MinSizeRel\\sfml-system.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\openal32.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\vorbisenc.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\vorbisfile.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\vorbis.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\ogg.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\flac.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-audio",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Audio",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "ALL_BUILD",
+                "name": "ALL_BUILD",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2",
+                "type": "UTILITY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-network-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-network.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-network.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Network",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/Network/Export.hpp",
+                      "../../../include/SFML/Network/Ftp.hpp",
+                      "../../../include/SFML/Network/Http.hpp",
+                      "../../../include/SFML/Network/IpAddress.hpp",
+                      "../../../include/SFML/Network/Packet.hpp",
+                      "../../../include/SFML/Network/Socket.hpp",
+                      "SocketImpl.hpp",
+                      "../../../include/SFML/Network/SocketHandle.hpp",
+                      "../../../include/SFML/Network/SocketSelector.hpp",
+                      "../../../include/SFML/Network/TcpListener.hpp",
+                      "../../../include/SFML/Network/TcpSocket.hpp",
+                      "../../../include/SFML/Network/UdpSocket.hpp",
+                      "Win32/SocketImpl.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  },
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG  ",
+                    "defines": [
+                      "SFML_NETWORK_EXPORTS",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Ftp.cpp",
+                      "Http.cpp",
+                      "IpAddress.cpp",
+                      "Packet.cpp",
+                      "Socket.cpp",
+                      "SocketSelector.cpp",
+                      "TcpListener.cpp",
+                      "TcpSocket.cpp",
+                      "UdpSocket.cpp",
+                      "Win32/SocketImpl.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-network-2.dll",
+                "linkFlags": "/machine:x64 /INCREMENTAL:NO",
+                "linkLibraries": "..\\..\\..\\lib\\MinSizeRel\\sfml-system.lib ws2_32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-network",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Network",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-graphics-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-graphics.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-graphics.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Graphics",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG  ",
+                    "defines": [
+                      "SFML_GRAPHICS_EXPORTS",
+                      "STBI_FAILURE_USERMSG",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/stb_image"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/jpeg"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/freetype2"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "BlendMode.cpp",
+                      "Color.cpp",
+                      "Font.cpp",
+                      "Glsl.cpp",
+                      "GLCheck.cpp",
+                      "GLExtensions.cpp",
+                      "Image.cpp",
+                      "ImageLoader.cpp",
+                      "RenderStates.cpp",
+                      "RenderTexture.cpp",
+                      "RenderTarget.cpp",
+                      "RenderWindow.cpp",
+                      "Shader.cpp",
+                      "Texture.cpp",
+                      "TextureSaver.cpp",
+                      "Transform.cpp",
+                      "Transformable.cpp",
+                      "View.cpp",
+                      "Vertex.cpp",
+                      "GLLoader.cpp",
+                      "Shape.cpp",
+                      "CircleShape.cpp",
+                      "RectangleShape.cpp",
+                      "ConvexShape.cpp",
+                      "Sprite.cpp",
+                      "Text.cpp",
+                      "VertexArray.cpp",
+                      "RenderTextureImpl.cpp",
+                      "RenderTextureImplFBO.cpp",
+                      "RenderTextureImplDefault.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/Graphics/BlendMode.hpp",
+                      "../../../include/SFML/Graphics/Color.hpp",
+                      "../../../include/SFML/Graphics/Export.hpp",
+                      "../../../include/SFML/Graphics/Font.hpp",
+                      "../../../include/SFML/Graphics/Glsl.hpp",
+                      "../../../include/SFML/Graphics/Glsl.inl",
+                      "../../../include/SFML/Graphics/Glyph.hpp",
+                      "GLCheck.hpp",
+                      "GLExtensions.hpp",
+                      "../../../include/SFML/Graphics/Image.hpp",
+                      "ImageLoader.hpp",
+                      "../../../include/SFML/Graphics/PrimitiveType.hpp",
+                      "../../../include/SFML/Graphics/Rect.hpp",
+                      "../../../include/SFML/Graphics/Rect.inl",
+                      "../../../include/SFML/Graphics/RenderStates.hpp",
+                      "../../../include/SFML/Graphics/RenderTexture.hpp",
+                      "../../../include/SFML/Graphics/RenderTarget.hpp",
+                      "../../../include/SFML/Graphics/RenderWindow.hpp",
+                      "../../../include/SFML/Graphics/Shader.hpp",
+                      "../../../include/SFML/Graphics/Texture.hpp",
+                      "TextureSaver.hpp",
+                      "../../../include/SFML/Graphics/Transform.hpp",
+                      "../../../include/SFML/Graphics/Transformable.hpp",
+                      "../../../include/SFML/Graphics/View.hpp",
+                      "../../../include/SFML/Graphics/Vertex.hpp",
+                      "GLLoader.hpp",
+                      "../../../include/SFML/Graphics/Drawable.hpp",
+                      "../../../include/SFML/Graphics/Shape.hpp",
+                      "../../../include/SFML/Graphics/CircleShape.hpp",
+                      "../../../include/SFML/Graphics/RectangleShape.hpp",
+                      "../../../include/SFML/Graphics/ConvexShape.hpp",
+                      "../../../include/SFML/Graphics/Sprite.hpp",
+                      "../../../include/SFML/Graphics/Text.hpp",
+                      "../../../include/SFML/Graphics/VertexArray.hpp",
+                      "RenderTextureImpl.hpp",
+                      "RenderTextureImplFBO.hpp",
+                      "RenderTextureImplDefault.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-graphics-2.dll",
+                "linkFlags": "/machine:x64 /INCREMENTAL:NO",
+                "linkLibraries": "..\\..\\..\\lib\\MinSizeRel\\sfml-window.lib ..\\..\\..\\lib\\MinSizeRel\\sfml-system.lib opengl32.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\freetype.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\jpeg.lib winmm.lib gdi32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-graphics",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Graphics",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "_build/CMakeFiles/83c1458ccb2f6952b75631cec17a81fd/generate.stamp.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ZERO_CHECK",
+                "name": "ZERO_CHECK",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2",
+                "type": "UTILITY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-system-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-system.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-system.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/System",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG  ",
+                    "defines": [
+                      "SFML_SYSTEM_EXPORTS",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Clock.cpp",
+                      "Err.cpp",
+                      "Lock.cpp",
+                      "Mutex.cpp",
+                      "Sleep.cpp",
+                      "String.cpp",
+                      "Thread.cpp",
+                      "ThreadLocal.cpp",
+                      "Time.cpp",
+                      "FileInputStream.cpp",
+                      "MemoryInputStream.cpp",
+                      "Win32/ClockImpl.cpp",
+                      "Win32/MutexImpl.cpp",
+                      "Win32/SleepImpl.cpp",
+                      "Win32/ThreadImpl.cpp",
+                      "Win32/ThreadLocalImpl.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/System/Clock.hpp",
+                      "../../../include/SFML/System/Err.hpp",
+                      "../../../include/SFML/System/Export.hpp",
+                      "../../../include/SFML/System/InputStream.hpp",
+                      "../../../include/SFML/System/Lock.hpp",
+                      "../../../include/SFML/System/Mutex.hpp",
+                      "../../../include/SFML/System/NativeActivity.hpp",
+                      "../../../include/SFML/System/NonCopyable.hpp",
+                      "../../../include/SFML/System/Sleep.hpp",
+                      "../../../include/SFML/System/String.hpp",
+                      "../../../include/SFML/System/String.inl",
+                      "../../../include/SFML/System/Thread.hpp",
+                      "../../../include/SFML/System/Thread.inl",
+                      "../../../include/SFML/System/ThreadLocal.hpp",
+                      "../../../include/SFML/System/ThreadLocalPtr.hpp",
+                      "../../../include/SFML/System/ThreadLocalPtr.inl",
+                      "../../../include/SFML/System/Time.hpp",
+                      "../../../include/SFML/System/Utf.hpp",
+                      "../../../include/SFML/System/Utf.inl",
+                      "../../../include/SFML/System/Vector2.hpp",
+                      "../../../include/SFML/System/Vector2.inl",
+                      "../../../include/SFML/System/Vector3.hpp",
+                      "../../../include/SFML/System/Vector3.inl",
+                      "../../../include/SFML/System/FileInputStream.hpp",
+                      "../../../include/SFML/System/MemoryInputStream.hpp",
+                      "Win32/ClockImpl.hpp",
+                      "Win32/MutexImpl.hpp",
+                      "Win32/SleepImpl.hpp",
+                      "Win32/ThreadImpl.hpp",
+                      "Win32/ThreadLocalImpl.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-system-2.dll",
+                "linkFlags": "/machine:x64 /INCREMENTAL:NO",
+                "linkLibraries": "winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-system",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/System",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-main.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-main.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-main.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Main",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG  ",
+                    "defines": [
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "MainWin32.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-main.lib",
+                "linkFlags": "/machine:x64",
+                "linkerLanguage": "CXX",
+                "name": "sfml-main",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Main",
+                "type": "STATIC_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-window-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-window.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/MinSizeRel/sfml-window.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Window",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG  ",
+                    "defines": [
+                      "SFML_WINDOW_EXPORTS",
+                      "UNICODE",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS",
+                      "_UNICODE"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Context.cpp",
+                      "GlContext.cpp",
+                      "GlResource.cpp",
+                      "Joystick.cpp",
+                      "JoystickManager.cpp",
+                      "Keyboard.cpp",
+                      "Mouse.cpp",
+                      "Touch.cpp",
+                      "Sensor.cpp",
+                      "SensorManager.cpp",
+                      "VideoMode.cpp",
+                      "Window.cpp",
+                      "WindowImpl.cpp",
+                      "Win32/WglContext.cpp",
+                      "Win32/WglExtensions.cpp",
+                      "Win32/InputImpl.cpp",
+                      "Win32/JoystickImpl.cpp",
+                      "Win32/SensorImpl.cpp",
+                      "Win32/VideoModeImpl.cpp",
+                      "Win32/WindowImplWin32.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/Window/Context.hpp",
+                      "../../../include/SFML/Window/Export.hpp",
+                      "GlContext.hpp",
+                      "../../../include/SFML/Window/GlResource.hpp",
+                      "../../../include/SFML/Window/ContextSettings.hpp",
+                      "../../../include/SFML/Window/Event.hpp",
+                      "InputImpl.hpp",
+                      "../../../include/SFML/Window/Joystick.hpp",
+                      "JoystickImpl.hpp",
+                      "JoystickManager.hpp",
+                      "../../../include/SFML/Window/Keyboard.hpp",
+                      "../../../include/SFML/Window/Mouse.hpp",
+                      "../../../include/SFML/Window/Touch.hpp",
+                      "../../../include/SFML/Window/Sensor.hpp",
+                      "SensorImpl.hpp",
+                      "SensorManager.hpp",
+                      "../../../include/SFML/Window/VideoMode.hpp",
+                      "VideoModeImpl.hpp",
+                      "../../../include/SFML/Window/Window.hpp",
+                      "../../../include/SFML/Window/WindowHandle.hpp",
+                      "WindowImpl.hpp",
+                      "../../../include/SFML/Window/WindowStyle.hpp",
+                      "Win32/WglContext.hpp",
+                      "Win32/WglExtensions.hpp",
+                      "Win32/InputImpl.hpp",
+                      "Win32/JoystickImpl.hpp",
+                      "Win32/SensorImpl.hpp",
+                      "Win32/WindowImplWin32.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-window-2.dll",
+                "linkFlags": "/machine:x64 /INCREMENTAL:NO",
+                "linkLibraries": "..\\..\\..\\lib\\MinSizeRel\\sfml-system.lib winmm.lib gdi32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-window",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Window",
+                "type": "SHARED_LIBRARY"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "RelWithDebInfo",
+        "projects": [
+          {
+            "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build",
+            "name": "SFML",
+            "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2",
+            "targets": [
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-audio-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-audio.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-audio.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Audio",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG  ",
+                    "defines": [
+                      "FLAC__NO_DLL",
+                      "OV_EXCLUDE_STATIC_CALLBACKS",
+                      "SFML_AUDIO_EXPORTS",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/AL"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "ALCheck.cpp",
+                      "AlResource.cpp",
+                      "AudioDevice.cpp",
+                      "Listener.cpp",
+                      "Music.cpp",
+                      "Sound.cpp",
+                      "SoundBuffer.cpp",
+                      "SoundBufferRecorder.cpp",
+                      "InputSoundFile.cpp",
+                      "OutputSoundFile.cpp",
+                      "SoundRecorder.cpp",
+                      "SoundSource.cpp",
+                      "SoundStream.cpp",
+                      "SoundFileFactory.cpp",
+                      "SoundFileReaderFlac.cpp",
+                      "SoundFileReaderOgg.cpp",
+                      "SoundFileReaderWav.cpp",
+                      "SoundFileWriterFlac.cpp",
+                      "SoundFileWriterOgg.cpp",
+                      "SoundFileWriterWav.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "ALCheck.hpp",
+                      "../../../include/SFML/Audio/AlResource.hpp",
+                      "AudioDevice.hpp",
+                      "../../../include/SFML/Audio/Export.hpp",
+                      "../../../include/SFML/Audio/Listener.hpp",
+                      "../../../include/SFML/Audio/Music.hpp",
+                      "../../../include/SFML/Audio/Sound.hpp",
+                      "../../../include/SFML/Audio/SoundBuffer.hpp",
+                      "../../../include/SFML/Audio/SoundBufferRecorder.hpp",
+                      "../../../include/SFML/Audio/InputSoundFile.hpp",
+                      "../../../include/SFML/Audio/OutputSoundFile.hpp",
+                      "../../../include/SFML/Audio/SoundRecorder.hpp",
+                      "../../../include/SFML/Audio/SoundSource.hpp",
+                      "../../../include/SFML/Audio/SoundStream.hpp",
+                      "../../../include/SFML/Audio/SoundFileFactory.hpp",
+                      "../../../include/SFML/Audio/SoundFileFactory.inl",
+                      "../../../include/SFML/Audio/SoundFileReader.hpp",
+                      "SoundFileReaderFlac.hpp",
+                      "SoundFileReaderOgg.hpp",
+                      "SoundFileReaderWav.hpp",
+                      "../../../include/SFML/Audio/SoundFileWriter.hpp",
+                      "SoundFileWriterFlac.hpp",
+                      "SoundFileWriterOgg.hpp",
+                      "SoundFileWriterWav.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-audio-2.dll",
+                "linkFlags": "/machine:x64 /debug /INCREMENTAL",
+                "linkLibraries": "..\\..\\..\\lib\\RelWithDebInfo\\sfml-system.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\openal32.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\vorbisenc.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\vorbisfile.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\vorbis.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\ogg.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\flac.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-audio",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Audio",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "ALL_BUILD",
+                "name": "ALL_BUILD",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2",
+                "type": "UTILITY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-network-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-network.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-network.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Network",
+                "fileGroups": [
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/Network/Export.hpp",
+                      "../../../include/SFML/Network/Ftp.hpp",
+                      "../../../include/SFML/Network/Http.hpp",
+                      "../../../include/SFML/Network/IpAddress.hpp",
+                      "../../../include/SFML/Network/Packet.hpp",
+                      "../../../include/SFML/Network/Socket.hpp",
+                      "SocketImpl.hpp",
+                      "../../../include/SFML/Network/SocketHandle.hpp",
+                      "../../../include/SFML/Network/SocketSelector.hpp",
+                      "../../../include/SFML/Network/TcpListener.hpp",
+                      "../../../include/SFML/Network/TcpSocket.hpp",
+                      "../../../include/SFML/Network/UdpSocket.hpp",
+                      "Win32/SocketImpl.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  },
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG  ",
+                    "defines": [
+                      "SFML_NETWORK_EXPORTS",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Ftp.cpp",
+                      "Http.cpp",
+                      "IpAddress.cpp",
+                      "Packet.cpp",
+                      "Socket.cpp",
+                      "SocketSelector.cpp",
+                      "TcpListener.cpp",
+                      "TcpSocket.cpp",
+                      "UdpSocket.cpp",
+                      "Win32/SocketImpl.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-network-2.dll",
+                "linkFlags": "/machine:x64 /debug /INCREMENTAL",
+                "linkLibraries": "..\\..\\..\\lib\\RelWithDebInfo\\sfml-system.lib ws2_32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-network",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Network",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-graphics-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-graphics.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-graphics.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Graphics",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG  ",
+                    "defines": [
+                      "SFML_GRAPHICS_EXPORTS",
+                      "STBI_FAILURE_USERMSG",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/stb_image"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/jpeg"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/extlibs/headers/freetype2"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "BlendMode.cpp",
+                      "Color.cpp",
+                      "Font.cpp",
+                      "Glsl.cpp",
+                      "GLCheck.cpp",
+                      "GLExtensions.cpp",
+                      "Image.cpp",
+                      "ImageLoader.cpp",
+                      "RenderStates.cpp",
+                      "RenderTexture.cpp",
+                      "RenderTarget.cpp",
+                      "RenderWindow.cpp",
+                      "Shader.cpp",
+                      "Texture.cpp",
+                      "TextureSaver.cpp",
+                      "Transform.cpp",
+                      "Transformable.cpp",
+                      "View.cpp",
+                      "Vertex.cpp",
+                      "GLLoader.cpp",
+                      "Shape.cpp",
+                      "CircleShape.cpp",
+                      "RectangleShape.cpp",
+                      "ConvexShape.cpp",
+                      "Sprite.cpp",
+                      "Text.cpp",
+                      "VertexArray.cpp",
+                      "RenderTextureImpl.cpp",
+                      "RenderTextureImplFBO.cpp",
+                      "RenderTextureImplDefault.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/Graphics/BlendMode.hpp",
+                      "../../../include/SFML/Graphics/Color.hpp",
+                      "../../../include/SFML/Graphics/Export.hpp",
+                      "../../../include/SFML/Graphics/Font.hpp",
+                      "../../../include/SFML/Graphics/Glsl.hpp",
+                      "../../../include/SFML/Graphics/Glsl.inl",
+                      "../../../include/SFML/Graphics/Glyph.hpp",
+                      "GLCheck.hpp",
+                      "GLExtensions.hpp",
+                      "../../../include/SFML/Graphics/Image.hpp",
+                      "ImageLoader.hpp",
+                      "../../../include/SFML/Graphics/PrimitiveType.hpp",
+                      "../../../include/SFML/Graphics/Rect.hpp",
+                      "../../../include/SFML/Graphics/Rect.inl",
+                      "../../../include/SFML/Graphics/RenderStates.hpp",
+                      "../../../include/SFML/Graphics/RenderTexture.hpp",
+                      "../../../include/SFML/Graphics/RenderTarget.hpp",
+                      "../../../include/SFML/Graphics/RenderWindow.hpp",
+                      "../../../include/SFML/Graphics/Shader.hpp",
+                      "../../../include/SFML/Graphics/Texture.hpp",
+                      "TextureSaver.hpp",
+                      "../../../include/SFML/Graphics/Transform.hpp",
+                      "../../../include/SFML/Graphics/Transformable.hpp",
+                      "../../../include/SFML/Graphics/View.hpp",
+                      "../../../include/SFML/Graphics/Vertex.hpp",
+                      "GLLoader.hpp",
+                      "../../../include/SFML/Graphics/Drawable.hpp",
+                      "../../../include/SFML/Graphics/Shape.hpp",
+                      "../../../include/SFML/Graphics/CircleShape.hpp",
+                      "../../../include/SFML/Graphics/RectangleShape.hpp",
+                      "../../../include/SFML/Graphics/ConvexShape.hpp",
+                      "../../../include/SFML/Graphics/Sprite.hpp",
+                      "../../../include/SFML/Graphics/Text.hpp",
+                      "../../../include/SFML/Graphics/VertexArray.hpp",
+                      "RenderTextureImpl.hpp",
+                      "RenderTextureImplFBO.hpp",
+                      "RenderTextureImplDefault.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-graphics-2.dll",
+                "linkFlags": "/machine:x64 /debug /INCREMENTAL",
+                "linkLibraries": "..\\..\\..\\lib\\RelWithDebInfo\\sfml-window.lib ..\\..\\..\\lib\\RelWithDebInfo\\sfml-system.lib opengl32.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\freetype.lib ..\\..\\..\\..\\extlibs\\libs-msvc-universal\\x64\\jpeg.lib winmm.lib gdi32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-graphics",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Graphics",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "_build/CMakeFiles/83c1458ccb2f6952b75631cec17a81fd/generate.stamp.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ZERO_CHECK",
+                "name": "ZERO_CHECK",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2",
+                "type": "UTILITY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-system-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-system.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-system.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/System",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG  ",
+                    "defines": [
+                      "SFML_SYSTEM_EXPORTS",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Clock.cpp",
+                      "Err.cpp",
+                      "Lock.cpp",
+                      "Mutex.cpp",
+                      "Sleep.cpp",
+                      "String.cpp",
+                      "Thread.cpp",
+                      "ThreadLocal.cpp",
+                      "Time.cpp",
+                      "FileInputStream.cpp",
+                      "MemoryInputStream.cpp",
+                      "Win32/ClockImpl.cpp",
+                      "Win32/MutexImpl.cpp",
+                      "Win32/SleepImpl.cpp",
+                      "Win32/ThreadImpl.cpp",
+                      "Win32/ThreadLocalImpl.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/System/Clock.hpp",
+                      "../../../include/SFML/System/Err.hpp",
+                      "../../../include/SFML/System/Export.hpp",
+                      "../../../include/SFML/System/InputStream.hpp",
+                      "../../../include/SFML/System/Lock.hpp",
+                      "../../../include/SFML/System/Mutex.hpp",
+                      "../../../include/SFML/System/NativeActivity.hpp",
+                      "../../../include/SFML/System/NonCopyable.hpp",
+                      "../../../include/SFML/System/Sleep.hpp",
+                      "../../../include/SFML/System/String.hpp",
+                      "../../../include/SFML/System/String.inl",
+                      "../../../include/SFML/System/Thread.hpp",
+                      "../../../include/SFML/System/Thread.inl",
+                      "../../../include/SFML/System/ThreadLocal.hpp",
+                      "../../../include/SFML/System/ThreadLocalPtr.hpp",
+                      "../../../include/SFML/System/ThreadLocalPtr.inl",
+                      "../../../include/SFML/System/Time.hpp",
+                      "../../../include/SFML/System/Utf.hpp",
+                      "../../../include/SFML/System/Utf.inl",
+                      "../../../include/SFML/System/Vector2.hpp",
+                      "../../../include/SFML/System/Vector2.inl",
+                      "../../../include/SFML/System/Vector3.hpp",
+                      "../../../include/SFML/System/Vector3.inl",
+                      "../../../include/SFML/System/FileInputStream.hpp",
+                      "../../../include/SFML/System/MemoryInputStream.hpp",
+                      "Win32/ClockImpl.hpp",
+                      "Win32/MutexImpl.hpp",
+                      "Win32/SleepImpl.hpp",
+                      "Win32/ThreadImpl.hpp",
+                      "Win32/ThreadLocalImpl.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-system-2.dll",
+                "linkFlags": "/machine:x64 /debug /INCREMENTAL",
+                "linkLibraries": "winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-system",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/System",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-main.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-main.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-main.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Main",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG  ",
+                    "defines": [
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "MainWin32.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-main.lib",
+                "linkFlags": "/machine:x64",
+                "linkerLanguage": "CXX",
+                "name": "sfml-main",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Main",
+                "type": "STATIC_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-window-2.dll",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-window.lib",
+                  "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/lib/RelWithDebInfo/sfml-window.pdb"
+                ],
+                "buildDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/_build/src/SFML/Window",
+                "fileGroups": [
+                  {
+                    "compileFlags": "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG  ",
+                    "defines": [
+                      "SFML_WINDOW_EXPORTS",
+                      "UNICODE",
+                      "_CRT_SECURE_NO_DEPRECATE",
+                      "_SCL_SECURE_NO_WARNINGS",
+                      "_UNICODE"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/include"
+                      },
+                      {
+                        "path": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "Context.cpp",
+                      "GlContext.cpp",
+                      "GlResource.cpp",
+                      "Joystick.cpp",
+                      "JoystickManager.cpp",
+                      "Keyboard.cpp",
+                      "Mouse.cpp",
+                      "Touch.cpp",
+                      "Sensor.cpp",
+                      "SensorManager.cpp",
+                      "VideoMode.cpp",
+                      "Window.cpp",
+                      "WindowImpl.cpp",
+                      "Win32/WglContext.cpp",
+                      "Win32/WglExtensions.cpp",
+                      "Win32/InputImpl.cpp",
+                      "Win32/JoystickImpl.cpp",
+                      "Win32/SensorImpl.cpp",
+                      "Win32/VideoModeImpl.cpp",
+                      "Win32/WindowImplWin32.cpp"
+                    ]
+                  },
+                  {
+                    "isGenerated": false,
+                    "sources": [
+                      "../../../include/SFML/Window/Context.hpp",
+                      "../../../include/SFML/Window/Export.hpp",
+                      "GlContext.hpp",
+                      "../../../include/SFML/Window/GlResource.hpp",
+                      "../../../include/SFML/Window/ContextSettings.hpp",
+                      "../../../include/SFML/Window/Event.hpp",
+                      "InputImpl.hpp",
+                      "../../../include/SFML/Window/Joystick.hpp",
+                      "JoystickImpl.hpp",
+                      "JoystickManager.hpp",
+                      "../../../include/SFML/Window/Keyboard.hpp",
+                      "../../../include/SFML/Window/Mouse.hpp",
+                      "../../../include/SFML/Window/Touch.hpp",
+                      "../../../include/SFML/Window/Sensor.hpp",
+                      "SensorImpl.hpp",
+                      "SensorManager.hpp",
+                      "../../../include/SFML/Window/VideoMode.hpp",
+                      "VideoModeImpl.hpp",
+                      "../../../include/SFML/Window/Window.hpp",
+                      "../../../include/SFML/Window/WindowHandle.hpp",
+                      "WindowImpl.hpp",
+                      "../../../include/SFML/Window/WindowStyle.hpp",
+                      "Win32/WglContext.hpp",
+                      "Win32/WglExtensions.hpp",
+                      "Win32/InputImpl.hpp",
+                      "Win32/JoystickImpl.hpp",
+                      "Win32/SensorImpl.hpp",
+                      "Win32/WindowImplWin32.hpp",
+                      "CMakeLists.txt"
+                    ]
+                  }
+                ],
+                "fullName": "sfml-window-2.dll",
+                "linkFlags": "/machine:x64 /debug /INCREMENTAL",
+                "linkLibraries": "..\\..\\..\\lib\\RelWithDebInfo\\sfml-system.lib winmm.lib gdi32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+                "linkerLanguage": "CXX",
+                "name": "sfml-window",
+                "sourceDirectory": "C:/Users/Mushu/git_lib/labyfou/3rd-party/SFML-2.4.2/src/SFML/Window",
+                "type": "SHARED_LIBRARY"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "cookie": "0.6426691740793031",
+    "inReplyTo": "codemodel",
+    "type": "reply"
+  }
+}

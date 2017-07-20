@@ -1,0 +1,6 @@
+_build/
+build/
+SFML/
+bin/
+.vscode/
+cmake/Modules/

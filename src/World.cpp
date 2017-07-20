@@ -58,8 +58,8 @@ bool World::hasPlayerReachEnd() const
 
 void World::loadTextures()
 {
-	textures_.load(TextureId::Tiles, "resources/png/spritesheet_tiles.png");
-	textures_.load(TextureId::Characters, "resources/png/spritesheet_characters.png");
+	textures_.load(TextureId::Tiles, "../resources/png/spritesheet_tiles.png");
+	textures_.load(TextureId::Characters, "../resources/png/spritesheet_characters.png");
 }
 
 void World::buildScene()

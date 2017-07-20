@@ -19,9 +19,9 @@ Application::Application() :
 {
 	window_.setKeyRepeatEnabled(false);
 
-	fonts_.load(FontId::Regular, "resources/ttf/Roboto-Regular.ttf");
-	textures_.load(TextureId::Buttons, "resources/png/ButtonsCollection.png");
-	textures_.load(TextureId::MainBackground, "resources/png/maze_background.png");
+	fonts_.load(FontId::Regular, "../resources/ttf/Roboto-Regular.ttf");
+	textures_.load(TextureId::Buttons, "../resources/png/ButtonsCollection.png");
+	textures_.load(TextureId::MainBackground, "../resources/png/maze_background.png");
 
 	statisticsText_.setFont(fonts_.resource(FontId::Regular));
 	statisticsText_.setPosition(5.f, 5.f);

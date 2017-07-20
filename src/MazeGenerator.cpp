@@ -64,7 +64,7 @@ Kruskal::Kruskal(sf::Vector2u mazeSize) :
 
 void Kruskal::generate()
 {
-    while(not nonVisitedSets_.empty())
+    while(!nonVisitedSets_.empty())
     {
         int pos = randomUniformInt(static_cast<int>(nonVisitedSets_.size()));
         auto itr = nonVisitedSets_.begin();
